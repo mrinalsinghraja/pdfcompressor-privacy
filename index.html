@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MSRX PDF Compressor</title>
   <meta name="description" content="Shrink PDFs on iPhone and iPad without turning the text into pictures. Entirely on-device, no uploads, no network access.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,7 +24,8 @@
     .nav-links a { font-size: 14px; color: var(--text2); text-decoration: none; transition: color 0.15s; }
     .nav-links a:hover { color: var(--text); }
     .hero { max-width: 1100px; margin: 0 auto; padding: 80px 24px 60px; text-align: center; }
-    .app-icon { width: 120px; height: 120px; border-radius: 28px; box-shadow: 0 8px 40px rgba(0,0,0,0.12); margin: 0 auto 32px; background: linear-gradient(135deg, #00c4df 0%, #8b5cf6 100%); display: flex; align-items: center; justify-content: center; }
+    .app-icon { width: 120px; height: 120px; border-radius: 28px; box-shadow: 0 8px 40px rgba(0,0,0,0.12); margin: 0 auto 32px; overflow: hidden; }
+    .app-icon img { width: 100%; height: 100%; display: block; }
     .app-icon-initials { font-size: 42px; font-weight: 800; color: white; letter-spacing: -2px; }
     .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text3); margin-bottom: 16px; }
     .hero h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; color: var(--text); margin-bottom: 16px; }
@@ -68,7 +71,7 @@
     </div>
   </nav>
   <section class="hero">
-    <div class="app-icon"><span class="app-icon-initials">PC</span></div>
+    <div class="app-icon"><img src="assets/app-icon.png" alt="MSRX PDF Compressor" width="512" height="512"></div>
     <p class="eyebrow">iOS · MSRX</p>
     <h1>MSRX PDF Compressor<br><span>Shrink PDFs. Keep the text.</span></h1>
     <p>Most PDF compressors flatten every page to an image, and the text stops being text. This one looks at each page first: pages with a real text layer keep it, and only scans get re-encoded. Entirely on your device — nothing is ever uploaded.</p>
@@ -85,8 +88,14 @@
     <p class="section-title">Key Features</p>
     <div class="features-grid">
       <div class="feature-card"><div class="feature-icon">🔎</div><h3>Text stays text</h3><p>Pages with a real text layer are copied through untouched, so the result is still selectable, searchable, and readable by VoiceOver. A 135-page workbook came out 33% smaller with all 138,000 characters intact.</p></div>
-      <div class="feature-card"><div class="feature-icon">📧</div><h3>Fit under a limit</h3><p>Name the size your email or upload form imposes — 5, 10, 20 or 25 MB — and it works out the settings by testing real pages. If your limit cannot be reached, it says so.</p></div>
-      <div class="feature-card"><div class="feature-icon">📊</div><h3>See where the space goes</h3><p>Before you commit, the app breaks the file down into images, fonts, page content and overhead, then tells you plainly what to expect.</p></div>
+      <div class="feature-card"><div class="feature-icon">📧</div><h3>Fit under a limit</h3><p>Name the size your email or upload form imposes — 5, 10, 20 or 25 MB — and it works out the settings by testing real pages. If your limit cannot be reached, it says so rather than pretending.</p></div>
+      <div class="feature-card"><div class="feature-icon">📊</div><h3>See where the space goes</h3><p>Before you commit, the file is broken down into images, fonts, page content and overhead, with a plain-language verdict: “10 of 28 pages are scans. Those compress well; the rest keep their text.”</p></div>
+      <div class="feature-card"><div class="feature-icon">📚</div><h3>Compress in batches</h3><p>Queue as many PDFs as you like and compress them in one run, with per-file results and a combined total. Files that cannot be improved are reported rather than quietly re-saved.</p></div>
+      <div class="feature-card"><div class="feature-icon">⚖️</div><h3>Compare before and after</h3><p>Put the original and the result side by side, page by page, and confirm for yourself that nothing was lost.</p></div>
+      <div class="feature-card"><div class="feature-icon">🕓</div><h3>History and lifetime total</h3><p>Every run is recorded with its before and after size, and the app keeps a running total of everything you have saved.</p></div>
+      <div class="feature-card"><div class="feature-icon">🌗</div><h3>Greyscale conversion</h3><p>Drop the colour on scans and photographs when you want the extra reduction, and leave it on when you do not.</p></div>
+      <div class="feature-card"><div class="feature-icon">📤</div><h3>Share sheet and Shortcuts</h3><p>Compress straight from any app's share sheet without opening this one, or use the Compress PDF action inside a Shortcut.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔡</div><h3>Built to be usable</h3><p>Full Dark Mode, Dynamic Type at every size, VoiceOver labels throughout, and motion that respects Reduce Motion.</p></div>
       <div class="feature-card"><div class="feature-icon">🔒</div><h3>Never leaves the device</h3><p>No uploads, no accounts, no analytics. The app links no networking code at all, so there is nothing to send anywhere.</p></div>
     </div>
   </section>
